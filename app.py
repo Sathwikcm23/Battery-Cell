@@ -22,4 +22,4 @@ def get_price():
         return jsonify({'error': 'Failed to retrieve price'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False,host='0.0.0.0')
